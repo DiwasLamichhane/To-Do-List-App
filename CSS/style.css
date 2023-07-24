@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* Css for container  */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    padding: 10px;
+}
+/* Css for todo-app */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 23px;
+}
+.todo-app h2{
+    color: #243b55;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 23px;
+    padding-left: 23px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 23px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* CSS for list  */
+ul li{
+    line-height: 25px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 45px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    line-height: 25px;
+    height: 24px;
+    width: 23px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-image: url(../Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: '';
+    border-radius: 50%;
+    background-image: url(../Images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
+
+/* copyright */
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color:#a5a5a5;
+}
